@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (don't commit sensitive data)
+.env
+
+# Dependency directory for some Node.js tools
+coverage/
+
+# Build output (e.g., if you're using Webpack or another bundler)
+dist/
+build/
+
+# Windows-specific files
+Thumbs.db
+Desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+
+# npm package lock file (optional)
+package-lock.json
+
+# Temporary files
+*.swp
