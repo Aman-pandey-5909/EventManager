@@ -1,9 +1,14 @@
 import Navbar from "@/components/Navbar/Navbar";
-
+import Main from "@/components/MainConn/Main";
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <nav>
+        <Navbar />
+      </nav>
+      <main>
+        <Main />
+      </main>
     </div>
   );
 }
