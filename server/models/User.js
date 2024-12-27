@@ -17,12 +17,20 @@ const userSchema = new mongoose.Schema({
         isVerified: {
             type: Boolean,
             default: false
+        },
+        memberSince: {
+            type: Date,
+            default: Date.now
         }
     },
     premiumInfo: {
         isPremium: {
             type: Boolean,
             default: false
+        },
+        expiryDate: {
+            type: Date,
+            default: () => Date.now() + 30 * 24 * 60 * 60 * 1000
         }
     }
 });
