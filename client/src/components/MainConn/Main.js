@@ -1,5 +1,4 @@
-import React from 'react'
-import Image from 'next/image'
+
 const Main = () => {
     return (
         <div className='p-5 w-[70%] mx-auto my-4 border-[rgb(73,135,197)] border-4'>

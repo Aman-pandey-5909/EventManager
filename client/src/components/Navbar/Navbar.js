@@ -9,13 +9,13 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
+import Link from 'next/link';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-
-const pages = ['Your-Events','About', 'Contact'];
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+const pages = ['Your-Events', 'About', 'Contact'];
 const settings = ['Dashboard', 'Logout'];
 
 function Navbar() {
@@ -89,7 +89,11 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                  <Link href={`/${page.toLowerCase()}`}>
+                    <Typography sx={{ textAlign: 'center' }}>
+                      {page}
+                    </Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -120,14 +124,14 @@ function Navbar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <Link href={`/${page.toLowerCase()}`}>{page}</Link>
               </Button>
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <AccountCircleIcon sx={{ fontSize: 40 }} />
               </IconButton>
             </Tooltip>
             <Menu
@@ -148,7 +152,11 @@ function Navbar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
+                  <Link href={`/${setting.toLowerCase()}`}>
+                    <Typography sx={{ textAlign: 'center' }}>
+                      {setting}
+                    </Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>

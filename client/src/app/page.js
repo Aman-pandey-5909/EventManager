@@ -3,9 +3,9 @@ import Main from "@/components/MainConn/Main";
 const Home = () => {
   return (
     <div>
-      <nav>
+      <div>
         <Navbar />
-      </nav>
+      </div>
       <main>
         <Main />
       </main>
