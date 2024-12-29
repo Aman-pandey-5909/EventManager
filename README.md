@@ -15,3 +15,5 @@
 ` npm run dev `
 
 ## Thanks :)
+
+## ps. If anyone wants to help and advance this project , please do help :( Im not that good at web development yet, but im trying ;)
