@@ -15,7 +15,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-const pages = ['Your-Events', 'About', 'Contact'];
+const pages = ['Events', 'About', 'Contact','Login'];
 const settings = ['Dashboard', 'Logout'];
 
 function Navbar() {
